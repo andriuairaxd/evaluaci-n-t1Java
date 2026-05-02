@@ -48,7 +48,7 @@ public class Instituto_innova {
 
                 control.agregar_estudiante(e1);
 
-                System.out.println("Desea agregar más estudiantes: s/n");
+                System.out.println("Desea agregar mss estudiantes: s/n");
                 rpta = sc.nextLine();
             }
 
