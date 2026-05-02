@@ -47,23 +47,4 @@ public class Scanner {
     }
 
 
-     
-    class EstudianteControlador {
-    ArrayList<Estudiante> lista_alumnos = new ArrayList<>();
-    
-    public void agregar_estudiante(Estudiante nuevo_estudiante) {
-        lista_alumnos.add(nuevo_estudiante);
-    }
-
-    public void listar_estudiantes() {
-        System.out.println("La lista de estudiantes es: ");
-        if (lista_alumnos.isEmpty()) {
-            System.out.println("La lista está vacía");
-            return;
-        }
-        for (Estudiante es : lista_alumnos) {
-            es.verDatos();
-        }
-    }
-
 }
