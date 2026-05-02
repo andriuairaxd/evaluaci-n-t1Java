@@ -10,8 +10,8 @@
 public class Scanner {
     private String nombre;
     private String tipoDocumento;
-    private String codigo; // Número de documento
-    private String carrera; // Tipo de beca
+    private String codigo;
+    private String carrera; 
     private char nivelSocio;
 
     public Estudiante(String carrera) {
@@ -47,7 +47,7 @@ public class Scanner {
     }
 
 
-     // --- CONTROLADOR RECICLADO ---
+     
     class EstudianteControlador {
     ArrayList<Estudiante> lista_alumnos = new ArrayList<>();
     
