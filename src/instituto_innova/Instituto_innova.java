@@ -18,8 +18,8 @@ public class Instituto_innova {
         Scanner sc = new Scanner(System.in);
         EstudianteControlador control = new EstudianteControlador();
         String rpta = "s";
-
         
+    
     }
     
 }
