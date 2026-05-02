@@ -1,3 +1,7 @@
+package instituto_innova;
+import java.util.ArrayList;
+
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -7,7 +11,7 @@
  *
  * @author UCB10116
  */
-public class Scanner {
+ public class Estudiante {
     private String nombre;
     private String tipoDocumento;
     private String codigo;
@@ -18,7 +22,6 @@ public class Scanner {
         this.carrera = carrera;
     }
 
-    
     public void setCodigo(String codigo) {
         if (this.tipoDocumento.equalsIgnoreCase("DNI") && codigo.length() == 8) {
             this.codigo = codigo;
@@ -32,6 +35,7 @@ public class Scanner {
     public void setNombre(String nombre) { this.nombre = nombre; }
     public void setTipoDocumento(String tipo) { this.tipoDocumento = tipo; }
     public void setNivelSocio(char nivel) { this.nivelSocio = nivel; }
+    public void setCarrera(String carrera) {this.carrera = carrera;}
 
     public double calcularPension() {
         double montoBase = (nivelSocio == 'A') ? 1000 : (nivelSocio == 'B' ? 800 : 600);
@@ -45,7 +49,9 @@ public class Scanner {
                            " NOMBRE: " + this.nombre + 
                            " PAGO: S/ " + calcularPension());
     }
-    class EstudianteControlador {
+ }
+
+class EstudianteControlador {
     ArrayList<Estudiante> lista_alumnos = new ArrayList<>();
     
     public void agregar_estudiante(Estudiante nuevo_estudiante) {
@@ -61,5 +67,6 @@ public class Scanner {
         for (Estudiante es : lista_alumnos) {
             es.verDatos();
         }
-    }
+    } 
 }
+

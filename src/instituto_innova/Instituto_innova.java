@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package instituto_innova;
-
+import java.util.InputMismatchException;
+import java.util.Scanner;
 /**
  *
  * @author UCB10116
@@ -61,8 +62,6 @@ public class Instituto_innova {
 
         System.out.println("Fin del programa");
     }
-        
-    
- }
+}
     
 
